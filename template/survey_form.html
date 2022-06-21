@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>WELCOME</title>
+        <style>
+
+        </style>
+            
+    </head>
+
+    <body>
+        <form action="#" method="post">
+            {% csrf_token %}
+            {% load static %}
+                <div id="heading">
+            <h1 id=title>Coders Voice! Tell us your choice!</h1>
+            <p id="description">We love to know about which technology and tools software engineers are using world wide! Each and every Developers opinions are very precious to us!</p>
+            </div>
+
+            <b> Choose your profession</b><br>
+            <select name="role" id="Profession" variable="pf">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+
+
+
+
+            <div class="button-control">	
+                <label id="cloud" ><b>Choose your preferred cloud service</b> </label><br>
+                <input type="radio" name="Times " >AWS<br>
+                <input type="radio" name="Times " >Azure<br>
+                <input type="radio" name="Times " >GCP<br>
+                <input type="radio" name="Times " >Others<br>
+            </div>	<br>
+
+            <div class="button-control">	
+                <label id="Languages" ><b>Language</b> </label><br>
+                <input type="checkbox" name="Times " >Java/JavaScript<br>
+                <input type="checkbox" name="Times " >Python<br>
+                <input type="checkbox" name="Times " >Perl<br>
+                <input type="checkbox" name="Times " >C,C++<br>
+            </div>	<br>
+
+            <div class="button-control">
+                <label id="Development"> </label><b>Development</b><br>
+                <input type="radio" name="Times " >App Development<br>
+                <input type="radio" name="Times " >Website Development<br>
+                <input type="radio" name="Times " >Software Development<br>
+                <input type="radio" name="Times " >Graphics Designing<br>
+
+            </div>
+
+            <div id="button-area"><br><br>
+                <label id="Latest_Experience"><b>Latest technology experience:</b></label><br>
+                <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+                <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+                <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+                <input type="checkbox" name="tech3" value="git"> Github<br>
+                <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
+            </div>
+
+    
+            <div id="ending"><br><br>
+                <label id="Suggestions">Do you have any suggestions?</label><br>
+                <textarea style= height:50px;" class="form" placeholder="Type your suggestions here...."></textarea><br><br>
+            <!-- <input id="submit" type="submit"  value="submit"> -->
+                <button type="submit"><b>submit</b></button><br>
+            </div>
+
+        </form>
+        
+
+
+
+
+
+
+    </body>
+    
+</html>
