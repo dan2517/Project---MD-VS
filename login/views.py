@@ -19,7 +19,7 @@ def loginaction(request):
         cursor.execute(c)
         t=tuple(cursor.fetchall())
         if t==():
-            return render(request,'error.html')
+            return render(request,'Thankyou.html')
         else:
             return render(request,"survey_form.html")
 

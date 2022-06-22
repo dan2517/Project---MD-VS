@@ -26,5 +26,6 @@ def signaction(request):
         c="insert into users(First_Name,Last_Name,Email,Password) Values('{}','{}','{}','{}')".format(fn,ln,em,pwd)
         cursor.execute(c)
         m.commit()
+    
 
     return render(request,'signup_page.html')
